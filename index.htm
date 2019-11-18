@@ -90,29 +90,30 @@
   <li><a href="#Validation">Validation</a></li>
 </ol>
 
-<p id="Simple-run"><h3>Simple Run</h3></p><p><img src="./IWAMS_files/simplerun.png" width="100%"></p><p>Simple Run performs the  hydrological modelling using the M-MMF. This model takes the following inputs:</p>
+<p id="Simple-run"><h3>Simple Run</h3></p><p>Simple Run performs the  hydrological modelling using the M-MMF. This model takes the following inputs:</p>
         <p>Simulation year: year of model simulation<br>Topographical Data: Digital elevation model, Slope, Flow direction, Flow accumulation<br>Land-use data: Land use map following NRSC standards<br>Soil texture data: soil texture map based on FAO standards
         <br>Rainfall data: Rainfall information region wise in excel format<br>Boundary: region boundary map<br>Parameter files: Consisting of various soil, land use related parameter values (guide values provided along with the plugin, user can change if required)
         <br>Output folder: Location to store output from the model</p><p>The outputs from simple run is runoff,  kinetic energy, detachment due to raindrop impact, detachment due to runoff impact, total soil erosion, net erosion and deposition.</p>
-<p id="Sensitivity"><h3>Sensitivity</h3></p><p><img src="./IWAMS_files/sensitivity.png" width="60%"></p><p>Sensitivity tab performs sensitivity analysis using Average linear sensitivity analysis. This model takes the inputs similar to simple run, additional option to select the parameter for sensitivity is provided in the interface. The output from the model is sensitivity  analysis graphs for runoff and soil loss.
-</p>
-<p id="Calibration"><h3>Calibration</h3></p><p><img src="./IWAMS_files/calibration.png" width="60%"></p><p>Calibration tab performs model parameter calibration with respect to the observations. Particle Swarm optimisation approach is adopted for model calibration with nash-efficiency as the objective function. The  inputs required is similar to simple run, except simulation year start and end year for calibration needs to be provided. Additionally calibration range and observed data file is required in this model.
+<p><img src="./IWAMS_files/simplerun.png" width="100%"></p>
+<p id="Sensitivity"><h3>Sensitivity</h3></p><p>Sensitivity tab performs sensitivity analysis using Average linear sensitivity analysis. This model takes the inputs similar to simple run, additional option to select the parameter for sensitivity is provided in the interface. The output from the model is sensitivity  analysis graphs for runoff and soil loss.
+</p><p><img src="./IWAMS_files/sensitivity.png" width="100%"></p>
+<p id="Calibration"><h3>Calibration</h3></p><p>Calibration tab performs model parameter calibration with respect to the observations. Particle Swarm optimisation approach is adopted for model calibration with nash-efficiency as the objective function. The  inputs required is similar to simple run, except simulation year start and end year for calibration needs to be provided. Additionally calibration range and observed data file is required in this model.
    The user also has the option to select the sensitive parameter for calibration. Output from this model is calibrated values of the selected parameters.
-</p>
-<p id="Validation"><h3>Validation</h3></p><p><img src="./IWAMS_files/validation.png" width="60%"></p><p>Validation tab performs model validation with respect to the observations using the calibrated parameter. The  inputs required is similar to simple run, except simulation year start and end year for calibration needs to be provided. Additionally calibrated parameter values and observed data file is required in this model. Output from this model is simulated runoff, soil loss, percentage error, Nash efficiency coefficients, 
-    Percentage BIAS in model simulations wrt to observations. </p>
+</p><p><img src="./IWAMS_files/calibration.png" width="100%"></p>
+<p id="Validation"><h3>Validation</h3></p><p>Validation tab performs model validation with respect to the observations using the calibrated parameter. The  inputs required is similar to simple run, except simulation year start and end year for calibration needs to be provided. Additionally calibrated parameter values and observed data file is required in this model. Output from this model is simulated runoff, soil loss, percentage error, Nash efficiency coefficients, 
+    Percentage BIAS in model simulations wrt to observations. </p><p><img src="./IWAMS_files/validation.png" width="100%"></p>
 
 
 
 <h2 id="Prioritization">Watershed Prioritization Module
 </h2><p>The second module in IWAMS is the watershed prioritization module, which incorporates a multi-criteria modeling framework for watershed prioritization. This framework integrates the GOI watershed guidelines with soil erosion rates obtained from M-MMF model. The decision-making ability of the proposed framework is improved using multi-criteria decision-making (MCDM) techniques such as Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) and Analytic Hierarchy Process (AHP).
 Input required in this model is excel file consisting of values of selected criteria for different units. </p>
-<p><img src="./IWAMS_files/priortisation.png" width="60%"></p>
+<p><img src="./IWAMS_files/priortisation.png" width="100%"></p>
 
 <h2 id="Conservation">Conservation Module
 </h2><p>The third module in IWAMS is conservation measures module. This module integrates a multi-criteria framework to optimize the selection and location of soil and water conservation measures (SWCM). The selection and location of SWCM are identified as per the recommendation of the Food and Agricultural Organization (FAO). This is achieved by considering biophysical factors such as climate, topography, type of land-use, soil type, and size of the stream. In this module, economical, sustainable and efficiency factors such as cost, easiness to build, erosion prevention, water conservation, and lifespan, are also considered to identify best SWCM suitable for the area under study.
 </p>
-<p><img src="./IWAMS_files/conservation.png" width="60%"></p><p>This model takes the following inputs: </p>
+<p><img src="./IWAMS_files/conservation.png" width="100%"></p><p>This model takes the following inputs: </p>
 <p>Rainfall data: Rainfall information region wise in excel format<br>
 Topographical Data: Slope and Flow accumulation<br>
 Land-use data: Land use map following NRSC standards<br>
